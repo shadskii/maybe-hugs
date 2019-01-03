@@ -1,4 +1,4 @@
-interface Cutie {
+export interface Cutie {
     name: string;
     acceptsHugs: boolean;
 }
