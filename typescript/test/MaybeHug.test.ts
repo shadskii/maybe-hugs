@@ -1,6 +1,11 @@
 import { MaybeHug, Cutie } from "../MaybeHug";
 
 describe("Maybe Hug?", () => {
+  it("needs a cutie", () => {
+    const nonExistent: Cutie = undefined;
+    expect(() => new MaybeHug(nonExistent)).toThrow(TypeError);
+  });
+
   it("Should hug when huggable", () => {
     const huggable: Cutie = {
       name: "Hugs are pretty cool",
@@ -25,6 +30,6 @@ describe("Maybe Hug?", () => {
       acceptsHugs: true
     };
     const loveBird: MaybeHug = new MaybeHug(giveMeLove);
-    expect(loveBird.love()).toBe('I love everyone');
+    expect(loveBird.love()).toBe("I love everyone");
   });
 });
