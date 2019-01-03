@@ -1,5 +1,5 @@
 {
-  "name": "maybe-hugs",
+  "name": "maybe-hugs-ts",
   "version": "1.0.0",
   "description": "Conditional hugging implementation for Typescript",
   "main": "MaybeHug.ts",
